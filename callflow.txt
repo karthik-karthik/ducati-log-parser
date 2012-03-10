@@ -6,8 +6,6 @@ login: root
 Password:
 #
 #
-#
-#
 # syslink_trace_daemon
 Spawning Ducati-Tesla Trace daemon...
 # OsalDrv driver open: /dev/syslink: No such file or directory
@@ -26,46 +24,79 @@ Spawning SysM3 trace thread
         Error [0x897d2005] at Line no: 412 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/MemoryOS.c
 
 
-Process 3948623 (syslink_trace_daemon) terminated SIGSEGV code=1 fltno=11 ip=00100c18(syslink_trace_daemon@_btext+0x294) ref=00000000
+Process 3797068 (syslink_trace_daemon) terminated SIGSEGV code=1 fltno=11 ip=00100c18(syslink_trace_daemon@_btext+0x294) ref=00000000
+# syslink_trace_daemon
+Spawning Ducati-Tesla Trace daemon...
+# OsalDrv driver open: /dev/syslink: No such file or directory
+*** OsalDrv_open: Failed to open OsalDrv driver with OS!
+        Error [0x897d3002] at Line no: 131 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/OsalDrv.c
+*** MemoryOS_setup: OsalDrv_open failed!
+        Error [0x897d3002] at Line no: 191 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/MemoryOS.c
+OsalDrv driver close: /dev/syslink: Bad file descriptor
+*** OsalDrv_close: Failed to close OsalDrv driver with OS!
+        Error [0x897d3002] at Line no: 184 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/OsalDrv.c
+*** MemoryOS_destroy: OsalDrv_close failed!
+        Error [0x897d3002] at Line no: 257 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/MemoryOS.c
 
-#
-#
-#
-#
+Spawning SysM3 trace thread
+ *** MemoryOS_map: Module was not initialized!
+        Error [0x897d2005] at Line no: 412 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/MemoryOS.c
+
+
+Process 3805260 (syslink_trace_daemon) terminated SIGSEGV code=1 fltno=11 ip=00100c18(syslink_trace_daemon@_btext+0x294) ref=00000000
+# syslink_trace_daemon
+Spawning Ducati-Tesla Trace daemon...
+# OsalDrv driver open: /dev/syslink: No such file or directory
+*** OsalDrv_open: Failed to open OsalDrv driver with OS!
+        Error [0x897d3002] at Line no: 131 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/OsalDrv.c
+*** MemoryOS_setup: OsalDrv_open failed!
+        Error [0x897d3002] at Line no: 191 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/MemoryOS.c
+OsalDrv driver close: /dev/syslink: Bad file descriptor
+*** OsalDrv_close: Failed to close OsalDrv driver with OS!
+        Error [0x897d3002] at Line no: 184 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/OsalDrv.c
+*** MemoryOS_destroy: OsalDrv_close failed!
+        Error [0x897d3002] at Line no: 257 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/MemoryOS.c
+
+Spawning SysM3 trace thread
+ *** MemoryOS_map: Module was not initialized!
+        Error [0x897d2005] at Line no: 412 in file /builds/Trunk-Worldbuild/latest/svn/lib/tisyslink/ti/syslink/utils/hlos/usr/osal/Qnx/MemoryOS.c
+
+
+Process 3813452 (syslink_trace_daemon) terminated SIGSEGV code=1 fltno=11 ip=00100c18(syslink_trace_daemon@_btext+0x294) ref=00014454
+
 # syslink_trace_daemon
 Spawning Ducati-Tesla Trace daemon...
 
 # Spawning SysM3 trace thread
 
 Spawning AppM3 trace thread
-
-[SYSM3]:
-[SYSM3]: ** Hibernation Process Aborted Mbx(0) IM3 (1)**
+# syslink_trace_daemon
 [SYSM3]:  InterruptDucati.c|325| eventId(3)
 [SYSM3]:
-[APPM3]: [MNU=0] bios6/src/timm_osal_trace.c:[761]:FYI======================Shared Comm Buffer ,pTraceComm, PA = 9947fc00  VA = 0x8047fc00
-[APPM3]: [MNU=1] bios6/src/timm_osal_trace.c:[765]:FYI======================tools_log_buffer PA = 993d1c00  VA = 0x803d1c00
-[APPM3]: [MNU=2] bios6/src/timm_osal_trace.c:[771]:FYI======================tools_log_buffer Size =    10000
-[APPM3]: [ERR=3] src/mmsw_platform.c:[108]:ivahd_acquire - Register CM_IVAHD_CLKCTRL = 70001
-[APPM3]: [MNU=4] src/mmsw_platform.c:[184]:Ducati Image  xxxxxxxxxxxx (Compile Time: Feb 23 2012 10:47:26)xxxxxxxxxxxx
-[APPM3]: Creating Hibernating Swi...
-[APPM3]: MemMgr_init:Opening HeapBufMP1....Done
-[APPM3]: MemMgr_init:Opening HeapBufMP2....Done
-[APPM3]: MemMgr_init:Registering heap 1 with MessageQ....Done
-[APPM3]: MemMgr_init:Registering heap 2 with MessageQ....Done
-[APPM3]: src/dce.c:1182:        dce_init        debug: dCE running
-[APPM3]:
-[APPM3]: ** Hibernation Process Aborted Mbx(0) IM3 (1)**
-[APPM3]:
-[APPM3]: src/dce.c:1101:        dce_cleanup_cb  debug: cleanup: pid=4894842, c=@00000000
-[APPM3]: src/dce.c:1101:        dce_cleanup_cb  debug: cleanup: pid=4952188, c=@00000000
-[APPM3]: src/dce.c:1101:        dce_cleanup_cb  debug: cleanup: pid=4952188, c=@00000000
-[APPM3]: [ERR=5] omx_rpc/src/omx_rpc_skel.c:[96]:Prasad Log: Entering function -- RPC_SKEL_GetHandle
+[APPM3]: [ERR=7] src/dce.c:[1153]:Prasad Log:Entering function dce_cleanup_cb
+[APPM3]: [ERR=8] src/dce.c:[256]:Prasad Log:Entering function get_client
+[APPM3]: [ERR=9] src/dce.c:[262]:Prasad Log:Exiting function get_client
+[APPM3]: src/dce.c:1162:        dce_cleanup_cb  debug: cleanup: pid=4911226, c=@00000000
+[APPM3]: [ERR=10] omx_rpc/src/omx_rpc_skel.c:[1375]:Prasad Log:Entering Function RPC_cbA9ProcessCrash
+[APPM3]: [ERR=11] omx_rpc/src/omx_rpc_skel.c:[1433]:Prasad Log:Exiting Function RPC_cbA9ProcessCrash
+[APPM3]: [ERR=12] src/dce.c:[1153]:Prasad Log:Entering function dce_cleanup_cb
+[APPM3]: [ERR=13] src/dce.c:[256]:Prasad Log:Entering function get_client
+[APPM3]: [ERR=14] src/dce.c:[262]:Prasad Log:Exiting function get_client
+[APPM3]: src/dce.c:1162:        dce_cleanup_cb  debug: cleanup: pid=4968572, c=@00000000
+[APPM3]: [ERR=15] omx_rpc/src/omx_rpc_skel.c:[1375]:Prasad Log:Entering Function RPC_cbA9ProcessCrash
+[APPM3]: [ERR=16] omx_rpc/src/omx_rpc_skel.c:[1433]:Prasad Log:Exiting Function RPC_cbA9ProcessCrash
+[APPM3]: [ERR=17] src/dce.c:[1153]:Prasad Log:Entering function dce_cleanup_cb
+[APPM3]: [ERR=18] src/dce.c:[256]:Prasad Log:Entering function get_client
+[APPM3]: [ERR=19] src/dce.c:[262]:Prasad Log:Exiting function get_client
+[APPM3]: src/dce.c:1162:        dce_cleanup_cb  debug: cleanup: pid=4968572, c=@00000000
+[APPM3]: [ERR=20] omx_rpc/src/omx_rpc_skel.c:[1375]:Prasad Log:Entering Function RPC_cbA9ProcessCrash
+[APPM3]: [ERR=21] omx_rpc/src/omx_rpc_skel.c:[1433]:Prasad Log:Exiting Function RPC_cbA9ProcessCrash
+[APPM3]: [ERR=22] omx_rpc/src/omx_rpc_skel.c:[95]:Prasad Log:Entering Function RPC_SKEL_GetHandle
 [APPM3]: MemMgr: obtained index 2124419093 for function MemMgr_Alloc.
 [APPM3]: MemMgr: obtained index 2123370518 for function MemMgr_Free.
-[APPM3]: [ERR=6] src/i2c_wrapper.c:[50]:Entering initialize_i2c
-[APPM3]: [ERR=7] src/msp_sysInit.c:[131]:get_Winchester_Version called, version = 255 (0 means Winchester 1, 1 indicates Winchester 2)
-[APPM3]: [ERR=8] ST987/src/ST987_tsk.c:[180]: In ST987_Task starting for loop
+[APPM3]: [ERR=23] src/i2c_wrapper.c:[50]:Entering initialize_i2c
+[APPM3]: [ERR=24] src/msp_sysInit.c:[131]:get_Winchester_Version called, version = 255 (0 means Winchester 1, 1 indicates Winchester 2)
+[APPM3]: [ERR=25] ST987/src/ST987_tsk.c:[180]: In ST987_Task starting for loop
 [APPM3]:
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
@@ -75,249 +106,285 @@ Spawning AppM3 trace thread
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 83, value is 0
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [ERR=9] ST987/src/ST987_tsk.c:[271]:In ST987_Task, Powering Off ST ISP
-[APPM3]: [ERR=10] src/i2c_wrapper.c:[256]:In deinitialize_i2c
-[APPM3]: [ERR=11] src/sensor_detect_MSP.c:[264]:0>>:ST987 Socket:0
-[APPM3]: [ERR=12] src/sensor_detect_MSP.c:[264]:1>>:CSI2A Socket:0
-[APPM3]: [ERR=13] src/sensor_detect_MSP.c:[264]:2>>:(null) Socket:0
-[APPM3]: [ERR=14] src/sensor_detect_MSP.c:[264]:3>>:(null) Socket:0
-[APPM3]: [ERR=15] src/sensor_detect_MSP.c:[264]:4>>:(null) Socket:0
-[APPM3]: [ERR=16] src/sensor_detect_MSP.c:[264]:5>>:(null) Socket:0
-[APPM3]: [ERR=17] src/sensor_detect_MSP.c:[267]:On Socket:1 Sensor no detected
-[APPM3]: [ERR=18] src/sensor_detect_MSP.c:[267]:On Socket:2 Sensor no detected
-[APPM3]: [ERR=19] src/config/omx_config/configs/omx_configs_custom.c:[1697]:
+[APPM3]: [ERR=26] ST987/src/ST987_tsk.c:[271]:In ST987_Task, Powering Off ST ISP
+[APPM3]: [ERR=27] src/i2c_wrapper.c:[256]:In deinitialize_i2c
+[APPM3]: [ERR=28] src/sensor_detect_MSP.c:[264]:0>>:ST987 Socket:0
+[APPM3]: [ERR=29] src/sensor_detect_MSP.c:[264]:1>>:CSI2A Socket:0
+[APPM3]: [ERR=30] src/sensor_detect_MSP.c:[264]:2>>:(null) Socket:0
+[APPM3]: [ERR=31] src/sensor_detect_MSP.c:[264]:3>>:(null) Socket:0
+[APPM3]: [ERR=32] src/sensor_detect_MSP.c:[264]:4>>:(null) Socket:0
+[APPM3]: [ERR=33] src/sensor_detect_MSP.c:[264]:5>>:(null) Socket:0
+[APPM3]: [ERR=34] src/sensor_detect_MSP.c:[267]:On Socket:1 Sensor no detected
+[APPM3]: [ERR=35] src/sensor_detect_MSP.c:[267]:On Socket:2 Sensor no detected
+[APPM3]: [ERR=36] src/config/omx_config/configs/omx_configs_custom.c:[1697]:
 [APPM3]: OMX_ConfMngPlugin_SetToDefault_TiCamConfigs_COMP_MipiCounters_CUSTOM called.
 [APPM3]:
 [APPM3]: Depreciated API: ERROR: bios6/src/timm_osal_pipes.c:[215]:pHandle is NULL in TIMM_OSAL_WriteToPipe!!!
-[APPM3]: [ERR=20] omx_rpc/src/omx_rpc_skel.c:[228]:Prasad Log: Exiting function -- RPC_SKEL_GetHandle
-[APPM3]: [ERR=21] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=22] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=23] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=24] src/config/omx_config/params/omx_params_custom.c:[220]:
+[APPM3]: [ERR=37] omx_rpc/src/omx_rpc_skel.c:[145]:Prasad Log:Function is RPC_SKEL_GetHandle, Component Name OMX.TI.DUCATI1.VIDEO.CAMERA Handle 0x4289c0
+[APPM3]: [ERR=38] omx_rpc/src/omx_rpc_skel.c:[230]:Prasad Log:Exiting Function RPC_SKEL_GetHandle, Return Value 0x0
+[APPM3]: [ERR=39] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=40] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x7f00005b pCompParam=0xa0064fc8
+[APPM3]: [ERR=41] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=42] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=43] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x7f00005b pCompParam=0xa00650c8
+[APPM3]: [ERR=44] src/config/omx_config/params/omx_params_custom.c:[220]:
 [APPM3]: Error in src/config/omx_config/params/omx_params_custom.c, line:220
 [APPM3]:
-[APPM3]: [ERR=25] src/config/omx_sup/cam_super_cfg_plugin.c:[103]:
+[APPM3]: [ERR=45] src/config/omx_sup/cam_super_cfg_plugin.c:[103]:
 [APPM3]: Error in src/config/omx_sup/cam_super_cfg_plugin.c, line:103
 [APPM3]:
-[APPM3]: [ERR=26] src/conf_mng.c:[158]:
+[APPM3]: [ERR=46] src/conf_mng.c:[158]:
 [APPM3]: Error in src/conf_mng.c, line:158
 [APPM3]:
-[APPM3]: [ERR=27] omx_rpc/src/omx_rpc_skel.c:[434]:Component returned error: 0x8000100e
-[APPM3]: [ERR=28] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=29] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=30] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=31] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=32] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=33] omx_rpc/src/omx_rpc_skel.c:[529]:Prasad Log: Entering function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=34] omx_rpc/src/omx_rpc_skel.c:[556]:Prasad Log: Exiting function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=35] omx_rpc/src/omx_rpc_skel.c:[471]:Prasad Log: Entering function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=36] omx_rpc/src/omx_rpc_skel.c:[498]:Prasad Log: Exiting function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=37] omx_rpc/src/omx_rpc_skel.c:[529]:Prasad Log: Entering function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=38] omx_rpc/src/omx_rpc_skel.c:[556]:Prasad Log: Exiting function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=39] omx_rpc/src/omx_rpc_skel.c:[471]:Prasad Log: Entering function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=40] omx_rpc/src/omx_rpc_skel.c:[498]:Prasad Log: Exiting function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=41] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=42] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=43] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=44] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=45] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=46] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=47] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=48] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=49] omx_rpc/src/omx_rpc_skel.c:[471]:Prasad Log: Entering function -- RPC_SKEL_SetConfig
+[APPM3]: [ERR=47] omx_rpc/src/omx_rpc_skel.c:[442]:Component returned error: 0x8000100e
+[APPM3]: [ERR=48] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x8000100e
+[APPM3]: [ERR=49] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=50] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x7f00005c pCompParam=0xa00651c8
+[APPM3]: [ERR=51] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
+[APPM3]: [ERR=52] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=53] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x2, nParam=-1, pCmdData=0xa00652cc
+[APPM3]: [ERR=54] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x0
+[APPM3]: [ERR=55] omx_rpc/src/omx_rpc_skel.c:[539]:Prasad Log:Entering Function RPC_SKEL_GetConfig
+[APPM3]: [ERR=56] omx_rpc/src/omx_rpc_skel.c:[557]:Prasad Log:Function RPC_SKEL_GetConfig, Parameters nConfigIndex=0x7f000016 pCompConfig=0xa00659c8
+[APPM3]: [ERR=57] omx_rpc/src/omx_rpc_skel.c:[568]:Prasad Log:Exiting Function RPC_SKEL_GetConfig with return value 0x0
+[APPM3]: [ERR=58] omx_rpc/src/omx_rpc_skel.c:[479]:Prasad Log:Entering Function RPC_SKEL_SetConfig
+[APPM3]: [ERR=59] omx_rpc/src/omx_rpc_skel.c:[497]:Prasad Log:Function RPC_SKEL_SetConfig, Parameters nConfigIndex=0x7f000016 pCompConfig=0xa0065ac8
+[APPM3]: [ERR=60] omx_rpc/src/omx_rpc_skel.c:[508]:Prasad Log:Exiting Function RPC_SKEL_SetConfig with return value 0x0
+[APPM3]: [ERR=61] omx_rpc/src/omx_rpc_skel.c:[539]:Prasad Log:Entering Function RPC_SKEL_GetConfig
+[APPM3]: [ERR=62] omx_rpc/src/omx_rpc_skel.c:[557]:Prasad Log:Function RPC_SKEL_GetConfig, Parameters nConfigIndex=0x7f000015 pCompConfig=0xa0065bc8
+[APPM3]: [ERR=63] omx_rpc/src/omx_rpc_skel.c:[568]:Prasad Log:Exiting Function RPC_SKEL_GetConfig with return value 0x0
+[APPM3]: [ERR=64] omx_rpc/src/omx_rpc_skel.c:[479]:Prasad Log:Entering Function RPC_SKEL_SetConfig
+[APPM3]: [ERR=65] omx_rpc/src/omx_rpc_skel.c:[497]:Prasad Log:Function RPC_SKEL_SetConfig, Parameters nConfigIndex=0x7f000015 pCompConfig=0xa0065cc8
+[APPM3]: [ERR=66] omx_rpc/src/omx_rpc_skel.c:[508]:Prasad Log:Exiting Function RPC_SKEL_SetConfig with return value 0x0
+[APPM3]: [ERR=67] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=68] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x7f000053 pCompParam=0xa0065dc8
+[APPM3]: [ERR=69] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=70] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=71] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x7f000053 pCompParam=0xa0065ec8
+[APPM3]: [ERR=72] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
+[APPM3]: [ERR=73] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=74] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x7f00004a pCompParam=0xa0065fc8
+[APPM3]: [ERR=75] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=76] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=77] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x7f00004a pCompParam=0xa00660c8
+[APPM3]: [ERR=78] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
+[APPM3]: [ERR=79] omx_rpc/src/omx_rpc_skel.c:[479]:Prasad Log:Entering Function RPC_SKEL_SetConfig
+[APPM3]: [ERR=80] omx_rpc/src/omx_rpc_skel.c:[497]:Prasad Log:Function RPC_SKEL_SetConfig, Parameters nConfigIndex=0x7000010 pCompConfig=0xa00661c8
 [APPM3]: Depreciated API: ERROR: bios6/src/timm_osal_pipes.c:[215]:pHandle is NULL in TIMM_OSAL_WriteToPipe!!!
-[APPM3]: [ERR=50] omx_rpc/src/omx_rpc_skel.c:[498]:Prasad Log: Exiting function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=51] omx_rpc/src/omx_rpc_skel.c:[471]:Prasad Log: Entering function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=52] omx_rpc/src/omx_rpc_skel.c:[498]:Prasad Log: Exiting function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=53] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=54] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=55] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=56] omx_base_comp/src/omx_base.c:[685]:Failed check: eError == OMX_ErrorNone
-[APPM3]: [ERR=57] omx_base_comp/src/omx_base.c:[685]:Returning error: eError
-[APPM3]: [ERR=58] omx_rpc/src/omx_rpc_skel.c:[615]:Component returned error: 0x90000005
-[APPM3]: [ERR=59] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=60] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=61] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=62] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=63] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=64] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=65] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=66] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=67] src/i2c_wrapper.c:[50]:Entering initialize_i2c
+[APPM3]: [ERR=81] omx_rpc/src/omx_rpc_skel.c:[508]:Prasad Log:Exiting Function RPC_SKEL_SetConfig with return value 0x0
+[APPM3]: [ERR=82] omx_rpc/src/omx_rpc_skel.c:[479]:Prasad Log:Entering Function RPC_SKEL_SetConfig
+[APPM3]: [ERR=83] omx_rpc/src/omx_rpc_skel.c:[497]:Prasad Log:Function RPC_SKEL_SetConfig, Parameters nConfigIndex=0x7f000056 pCompConfig=0xa00662c8
+[APPM3]: [ERR=84] omx_rpc/src/omx_rpc_skel.c:[508]:Prasad Log:Exiting Function RPC_SKEL_SetConfig with return value 0x0
+[APPM3]: [ERR=85] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=86] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x7f000055 pCompParam=0xa00663c8
+[APPM3]: [ERR=87] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
+[APPM3]: [ERR=88] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=89] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x2, nParam=2, pCmdData=0xa00664cc
+[APPM3]: [ERR=90] omx_base_comp/src/omx_base.c:[685]:Failed check: eError == OMX_ErrorNone
+[APPM3]: [ERR=91] omx_base_comp/src/omx_base.c:[685]:Returning error: eError
+[APPM3]: [ERR=92] omx_rpc/src/omx_rpc_skel.c:[630]:Component returned error: 0x90000005
+[APPM3]: [ERR=93] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x90000005
+[APPM3]: [ERR=94] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=95] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x2000001 pCompParam=0xa00665c8
+[APPM3]: [ERR=96] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=97] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=98] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x2000001 pCompParam=0xa00666c8
+[APPM3]: [ERR=99] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
+[APPM3]: [ERR=100] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=101] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x7f000025 pCompParam=0xa00667c8
+[APPM3]: [ERR=102] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=103] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=104] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x7f000025 pCompParam=0xa00668c8
+[APPM3]: [ERR=105] src/i2c_wrapper.c:[50]:Entering initialize_i2c
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 39, value is 0
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 83, value is 0
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 39, value is 1
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 83, value is 1
-[APPM3]: [ERR=68] ST987/src/ST987.c:[549]: read_Winchester_Version HW version of ST ISP is 0
+[APPM3]: [ERR=106] ST987/src/ST987.c:[549]: read_Winchester_Version HW version of ST ISP is 0
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 39, value is 0
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 83, value is 0
-[APPM3]: [ERR=69] src/i2c_wrapper.c:[256]:In deinitialize_i2c
-[APPM3]: [ERR=70] src/sensor_detect_MSP.c:[264]:0>>:ST987 Socket:0
-[APPM3]: [ERR=71] src/sensor_detect_MSP.c:[264]:1>>:CSI2A Socket:0
-[APPM3]: [ERR=72] src/sensor_detect_MSP.c:[264]:2>>:(null) Socket:0
-[APPM3]: [ERR=73] src/sensor_detect_MSP.c:[264]:3>>:(null) Socket:0
-[APPM3]: [ERR=74] src/sensor_detect_MSP.c:[264]:4>>:(null) Socket:0
-[APPM3]: [ERR=75] src/sensor_detect_MSP.c:[264]:5>>:(null) Socket:0
-[APPM3]: [ERR=76] src/sensor_detect_MSP.c:[267]:On Socket:1 Sensor no detected
-[APPM3]: [ERR=77] src/sensor_detect_MSP.c:[267]:On Socket:2 Sensor no detected
-[APPM3]: [ERR=78] src/i2c_wrapper.c:[50]:Entering initialize_i2c
-[APPM3]: [ERR=79] src/msp_sysInit.c:[131]:get_Winchester_Version called, version = 0 (0 means Winchester 1, 1 indicates Winchester 2)
-[APPM3]: [ERR=80] ST987/src/ST987_tsk.c:[180]: In ST987_Task starting for loop
+[APPM3]: [ERR=107] src/i2c_wrapper.c:[256]:In deinitialize_i2c
+[APPM3]: [ERR=108] src/sensor_detect_MSP.c:[264]:0>>:ST987 Socket:0
+[APPM3]: [ERR=109] src/sensor_detect_MSP.c:[264]:1>>:CSI2A Socket:0
+[APPM3]: [ERR=110] src/sensor_detect_MSP.c:[264]:2>>:(null) Socket:0
+[APPM3]: [ERR=111] src/sensor_detect_MSP.c:[264]:3>>:(null) Socket:0
+[APPM3]: [ERR=112] src/sensor_detect_MSP.c:[264]:4>>:(null) Socket:0
+[APPM3]: [ERR=113] src/sensor_detect_MSP.c:[264]:5>>:(null) Socket:0
+[APPM3]: [ERR=114] src/sensor_detect_MSP.c:[267]:On Socket:1 Sensor no detected
+[APPM3]: [ERR=115] src/sensor_detect_MSP.c:[267]:On Socket:2 Sensor no detected
+[APPM3]: [ERR=116] src/i2c_wrapper.c:[50]:Entering initialize_i2c
+[APPM3]: [ERR=117] src/msp_sysInit.c:[131]:get_Winchester_Version called, version = 0 (0 means Winchester 1, 1 indicates Winchester 2)
+[APPM3]: [ERR=118] ST987/src/ST987_tsk.c:[180]: In ST987_Task starting for loop
 [APPM3]:
-[APPM3]: [ERR=81] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
+[APPM3]: [ERR=119] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
 [APPM3]:
-[APPM3]: [ERR=82] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
+[APPM3]: [ERR=120] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
 [APPM3]:
-[APPM3]: [ERR=83] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
+[APPM3]: [ERR=121] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
 [APPM3]:
-[APPM3]: [ERR=84] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=85] omx_rpc/src/omx_rpc_skel.c:[529]:Prasad Log: Entering function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=86] omx_rpc/src/omx_rpc_skel.c:[556]:Prasad Log: Exiting function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=87] omx_rpc/src/omx_rpc_skel.c:[471]:Prasad Log: Entering function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=88] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
+[APPM3]: [ERR=122] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
+[APPM3]: [ERR=123] omx_rpc/src/omx_rpc_skel.c:[539]:Prasad Log:Entering Function RPC_SKEL_GetConfig
+[APPM3]: [ERR=124] omx_rpc/src/omx_rpc_skel.c:[557]:Prasad Log:Function RPC_SKEL_GetConfig, Parameters nConfigIndex=0x700000b pCompConfig=0xa00669c8
+[APPM3]: [ERR=125] omx_rpc/src/omx_rpc_skel.c:[568]:Prasad Log:Exiting Function RPC_SKEL_GetConfig with return value 0x0
+[APPM3]: [ERR=126] omx_rpc/src/omx_rpc_skel.c:[479]:Prasad Log:Entering Function RPC_SKEL_SetConfig
+[APPM3]: [ERR=127] omx_rpc/src/omx_rpc_skel.c:[497]:Prasad Log:Function RPC_SKEL_SetConfig, Parameters nConfigIndex=0x700000b pCompConfig=0xa0066ac8
+[APPM3]: [ERR=128] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
 [APPM3]:
-[APPM3]: [ERR=89] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
+[APPM3]: [ERR=129] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
 [APPM3]:
-[APPM3]: [ERR=90] omx_rpc/src/omx_rpc_skel.c:[498]:Prasad Log: Exiting function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=91] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=92] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=93] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=94] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
+[APPM3]: [ERR=130] omx_rpc/src/omx_rpc_skel.c:[508]:Prasad Log:Exiting Function RPC_SKEL_SetConfig with return value 0x0
+[APPM3]: [ERR=131] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=132] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x2000001 pCompParam=0xa0066bc8
+[APPM3]: [ERR=133] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=134] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=135] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x2000001 pCompParam=0xa0066cc8
+[APPM3]: [ERR=136] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
 [APPM3]:
-[APPM3]: [ERR=95] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
+[APPM3]: [ERR=137] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
 [APPM3]:
-[APPM3]: [ERR=96] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=97] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=98] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=99] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=100] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=101] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=102] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [MNU=103] rm_plugin_res/src/rm_pluginpower_resource.c:[482]:Requesting ISS resource from SLPM
+[APPM3]: [ERR=138] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
+[APPM3]: [ERR=139] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=140] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x3, nParam=2, pCmdData=0xa0066dcc
+[APPM3]: [ERR=141] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x0
+[APPM3]: [ERR=142] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=143] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x2000001 pCompParam=0xa0066fc8
+[APPM3]: [ERR=144] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=145] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=146] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x0, nParam=2, pCmdData=0xa00670cc
+[APPM3]: [ERR=147] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x0
+[APPM3]: [MNU=148] rm_plugin_res/src/rm_pluginpower_resource.c:[482]:Requesting ISS resource from SLPM
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=104] rm_plugin_res/src/rm_pluginres_iss.c:[131]:User requested ISS Mhz:200
-[APPM3]: [MNU=105] rm_plugin_res/src/rm_pluginres_iss.c:[135]:Request:: Setting ISS Mhz:200
-[APPM3]: [ERR=106] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=107] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=108] omx_rpc/src/omx_rpc_skel.c:[924]:Prasad Log: Entering function -- RPC_SKEL_UseBuffer
-[APPM3]: [MNU=109] rm_plugin_res/src/rm_pluginres_iss.c:[140]:User requested ISS Latency:10
-[APPM3]: [MNU=110] rm_plugin_res/src/rm_pluginres_iss.c:[144]:Request:: Setting ISS Latency:10
+[APPM3]: [MNU=149] rm_plugin_res/src/rm_pluginres_iss.c:[131]:User requested ISS Mhz:200
+[APPM3]: [MNU=150] rm_plugin_res/src/rm_pluginres_iss.c:[135]:Request:: Setting ISS Mhz:200
+[APPM3]: [ERR=151] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=152] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x2000001 pCompParam=0xa00671c8
+[APPM3]: [ERR=153] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=154] omx_rpc/src/omx_rpc_skel.c:[945]:Prasad Log:Entering Function RPC_SKEL_UseBuffer
+[APPM3]: [ERR=155] omx_rpc/src/omx_rpc_skel.c:[968]:Prasad Log:Function RPC_SKEL_UseBuffer, Parameters hComp=0x4289c0, pBufHdr=0x80339f38,              pbuffer=0x379461, nPortIndex=2, pAppPrivate=0x0, nSizeBytes=460800
+[APPM3]: [MNU=156] rm_plugin_res/src/rm_pluginres_iss.c:[140]:User requested ISS Latency:10
+[APPM3]: [MNU=157] rm_plugin_res/src/rm_pluginres_iss.c:[144]:Request:: Setting ISS Latency:10
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=111] rm_plugin_res/src/rm_pluginres_ipu.c:[141]:User requested IPU[1] Mhz:200
-[APPM3]: [MNU=112] rm_plugin_res/src/rm_pluginres_ipu.c:[145]:Request:: Setting IPU[1] Mhz:200
-[APPM3]: [MNU=113] rm_plugin_res/src/rm_pluginres_ipu.c:[150]:User requested IPU[1] Latency:10
-[APPM3]: [MNU=114] rm_plugin_res/src/rm_pluginres_ipu.c:[154]:Request:: Setting IPU[1] Latency:10
+[APPM3]: [MNU=158] rm_plugin_res/src/rm_pluginres_ipu.c:[141]:User requested IPU[1] Mhz:200
+[APPM3]: [MNU=159] rm_plugin_res/src/rm_pluginres_ipu.c:[145]:Request:: Setting IPU[1] Mhz:200
+[APPM3]: [MNU=160] rm_plugin_res/src/rm_pluginres_ipu.c:[150]:User requested IPU[1] Latency:10
+[APPM3]: [MNU=161] rm_plugin_res/src/rm_pluginres_ipu.c:[154]:Request:: Setting IPU[1] Latency:10
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
+[APPM3]: MemMgr:  return status = 2147467264
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=115] rm_pluMemMgr:  return status = 2147467264
-[APPM3]: gin_res/src/rm_pluginres_l3bus.c:[121]:User requested L3BUS BW:1000
-[APPM3]: [MNU=116] rm_plugin_res/src/rm_pluginres_l3bus.c:[125]:Request:: Setting L3BUS BW:1000
+[APPM3]: [MNU=162] rm_plugin_res/src/rm_pluginres_l3bus.c:[121]:User requested L3BUS BW:1000
+[APPM3]: [MNU=163] rm_plugin_res/src/rm_pluginres_l3bus.c:[125]:Request:: Setting L3BUS BW:1000
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]:
 [APPM3]: MemMgr:  return status = 2147450880
 [APPM3]: MemMgr:  return status = 2119241728
 [APPM3]: MemMgr:  return status = 2119225344
-[APPM3]: [ERR=117] omx_rpc/src/omx_rpc_skel.c:[1020]:Prasad Log: Exiting function -- RPC_SKEL_UseBuffer
+[APPM3]: [ERR=164] omx_rpc/src/omx_rpc_skel.c:[1045]:Prasad Log:Exiting Function RPC_SKEL_UseBuffer with return value 0x0
 [APPM3]: MemMgr:  return status = 2115031040
+[APPM3]: [ERR=165] omx_rpc/src/omx_rpc_skel.c:[945]:Prasad Log:Entering Function RPC_SKEL_UseBuffer
+[APPM3]: [ERR=166] omx_rpc/src/omx_rpc_skel.c:[968]:Prasad Log:Function RPC_SKEL_UseBuffer, Parameters hComp=0x4289c0, pBufHdr=0x80339f38,              pbuffer=0x379461, nPortIndex=2, pAppPrivate=0x0, nSizeBytes=460800
+[APPM3]: [ERR=167] omx_rpc/src/omx_rpc_skel.c:[1045]:Prasad Log:Exiting Function RPC_SKEL_UseBuffer with return value 0x0
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [ERR=118] omx_rpc/src/omx_rpc_skel.c:[924]:Prasad Log: Entering function -- RPC_SKEL_UseBuffer
-[APPM3]: [ERR=119] omx_rpc/src/omx_rpc_skel.c:[1020]:Prasad Log: Exiting function -- RPC_SKEL_UseBuffer
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [ERR=120] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
+[APPM3]: [ERR=168] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height i[ERR=169] omx_rpc/src/omx_rpc_skel.c:[945]:Prasad Log:Entering Function RPC_SKEL_UseBuffer
+[APPM3]: [ERR=170] omx_rpc/src/omx_rpc_skel.c:[968]:Prasad Log:Function RPC_SKEL_UseBuffer, Parameters hComp=0x4289c0, pBufHdr=0x80339f38,              pbuffer=0x379461, nPortIndex=2, pAppPrivate=0x0, nSizeBytes=460800
+[APPM3]: [ERR=171] omx_rpc/src/omx_rpc_skel.c:[1045]:Prasad Log:Exiting Function RPC_SKEL_UseBuffer with return value 0x0
+[APPM3]: s 480
 [APPM3]:
-[APPM3]: [ERR=121] omx_rpc/src/omx_rpc_skel.c:[924]:Prasad Log: Entering function -- RPC_SKEL_UseBuffer
-[APPM3]: [ERR=122] omx_rpc/src/omx_rpc_skel.c:[1020]:Prasad Log: Exiting function -- RPC_SKEL_UseBuffer
-[APPM3]: [ERR=123] src/msp_camera_api.c:[1098]:COLOR Pattern: 10
+[APPM3]: [ERR=172] src/msp_camera_api.c:[1098]:COLOR Pattern: 10
 [APPM3]:
-[APPM3]: [ERR=124] ST987/src/ST987.c:[586]: ST987_modeConfig  0
+[APPM3]: [ERR=173] ST987/src/ST987.c:[586]: ST987_modeConfig  0
 [APPM3]:
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 39, value is 0
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 83, value is 0
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 39, value is 1
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 83, value is 1
-[APPM3]: [ERR=125] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
+[APPM3]: [ERR=174] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
 [APPM3]:
-[APPM3]: [ERR=126] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=127] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=128] omx_rpc/src/omx_rpc_skel.c:[529]:Prasad Log: Entering function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=129] omx_rpc/src/omx_rpc_skel.c:[556]:Prasad Log: Exiting function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=130] omx_rpc/src/omx_rpc_skel.c:[471]:Prasad Log: Entering function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=131] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
+[APPM3]: [ERR=175] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=176] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x0, nParam=3, pCmdData=0xa0067bcc
+[APPM3]: [ERR=177] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x0
+[APPM3]: [ERR=178] omx_rpc/src/omx_rpc_skel.c:[539]:Prasad Log:Entering Function RPC_SKEL_GetConfig
+[APPM3]: [ERR=179] omx_rpc/src/omx_rpc_skel.c:[557]:Prasad Log:Function RPC_SKEL_GetConfig, Parameters nConfigIndex=0x7f000019 pCompConfig=0xa0067dc8
+[APPM3]: [ERR=180] omx_rpc/src/omx_rpc_skel.c:[568]:Prasad Log:Exiting Function RPC_SKEL_GetConfig with return value 0x0
+[APPM3]: [ERR=181] omx_rpc/src/omx_rpc_skel.c:[479]:Prasad Log:Entering Function RPC_SKEL_SetConfig
+[APPM3]: [ERR=182] omx_rpc/src/omx_rpc_skel.c:[497]:Prasad Log:Function RPC_SKEL_SetConfig, Parameters nConfigIndex=0x7f000019 pCompConfig=0xa0067ec8
+[APPM3]: [ERR=183] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
 [APPM3]:
-[APPM3]: [ERR=132] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
+[APPM3]: [ERR=184] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
 [APPM3]:
-[APPM3]: [ERR=133] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
+[APPM3]: [ERR=185] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 640 & height is 480
 [APPM3]:
-[APPM3]: [ERR=134] omx_rpc/src/omx_rpc_skel.c:[498]:Prasad Log: Exiting function -- RPC_SKEL_SetConfig
-[APPM3]: [ERR=135] omx_rpc/src/omx_rpc_skel.c:[529]:Prasad Log: Entering function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=136] src/msp_sysInit.c:[131]:get_Winchester_Version called, version = 0 (0 means Winchester 1, 1 indicates Winchester 2)
-[APPM3]: [ERR=137] omx_rpc/src/omx_rpc_skel.c:[556]:Prasad Log: Exiting function -- RPC_SKEL_GetConfig
-[APPM3]: [ERR=138] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=139] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=140] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=141] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=142] omx_rpc/src/omx_rpc_skel.c:[1052]:Prasad Log: Entering function -- RPC_SKEL_FreeBuffer
-[APPM3]: [ERR=143] omx_rpc/src/omx_rpc_skel.c:[1093]:Prasad Log: Exiting function -- RPC_SKEL_FreeBuffer
-[APPM3]: [ERR=144] omx_rpc/src/omx_rpc_skel.c:[1052]:Prasad Log: Entering function -- RPC_SKEL_FreeBuffer
-[APPM3]: [ERR=145] omx_rpc/src/omx_rpc_skel.c:[1093]:Prasad Log: Exiting function -- RPC_SKEL_FreeBuffer
-[APPM3]: [ERR=146] omx_rpc/src/omx_rpc_skel.c:[1052]:Prasad Log: Entering function -- RPC_SKEL_FreeBuffer
-[APPM3]: [ERR=147] omx_rpc/src/omx_rpc_skel.c:[1093]:Prasad Log: Exiting function -- RPC_SKEL_FreeBuffer
+[APPM3]: [ERR=186] omx_rpc/src/omx_rpc_skel.c:[508]:Prasad Log:Exiting Function RPC_SKEL_SetConfig with return value 0x0
+[APPM3]: [ERR=187] omx_rpc/src/omx_rpc_skel.c:[539]:Prasad Log:Entering Function RPC_SKEL_GetConfig
+[APPM3]: [ERR=188] omx_rpc/src/omx_rpc_skel.c:[557]:Prasad Log:Function RPC_SKEL_GetConfig, Parameters nConfigIndex=0x7f00007c pCompConfig=0xa0067fc8
+[APPM3]: [ERR=189] src/msp_sysInit.c:[131]:get_Winchester_Version called, version = 0 (0 means Winchester 1, 1 indicates Winchester 2)
+[APPM3]: [ERR=190] omx_rpc/src/omx_rpc_skel.c:[568]:Prasad Log:Exiting Function RPC_SKEL_GetConfig with return value 0x0
+[APPM3]: [ERR=191] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=192] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x0, nParam=2, pCmdData=0xa00680cc
+[APPM3]: [ERR=193] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x0
+[APPM3]: [ERR=194] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=195] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x0, nParam=1, pCmdData=0xa00682cc
+[APPM3]: [ERR=196] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x0
+[APPM3]: [ERR=197] omx_rpc/src/omx_rpc_skel.c:[1077]:Prasad Log:Entering Function RPC_SKEL_FreeBuffer
+[APPM3]: [ERR=198] omx_rpc/src/omx_rpc_skel.c:[1109]:Prasad Log:Function RPC_SKEL_FreeBuffer, Parameters hComp=0x4289c0, pBufHdr=0x43de00, pBuffer=0x0, nPortIndex=2
+[APPM3]: [ERR=199] omx_rpc/src/omx_rpc_skel.c:[1120]:Prasad Log:Exiting Function RPC_SKEL_FreeBuffer with return value 0x0
+[APPM3]: [ERR=200] omx_rpc/src/omx_rpc_skel.c:[1077]:Prasad Log:Entering Function RPC_SKEL_FreeBuffer
+[APPM3]: [ERR=201] omx_rpc/src/omx_rpc_skel.c:[1109]:Prasad Log:Function RPC_SKEL_FreeBuffer, Parameters hComp=0x4289c0, pBufHdr=0x43de50, pBuffer=0x0, nPortIndex=2
+[APPM3]: [ERR=202] omx_rpc/src/omx_rpc_skel.c:[1120]:Prasad Log:Exiting Function RPC_SKEL_FreeBuffer with return value 0x0
+[APPM3]: [ERR=203] omx_rpc/src/omx_rpc_skel.c:[1077]:Prasad Log:Entering Function RPC_SKEL_FreeBuffer
+[APPM3]: [ERR=204] omx_rpc/src/omx_rpc_skel.c:[1109]:Prasad Log:Function RPC_SKEL_FreeBuffer, Parameters hComp=0x4289c0, pBufHdr=0x43dea0, pBuffer=0x0, nPortIndex=2
+[APPM3]: [ERR=205] omx_rpc/src/omx_rpc_skel.c:[1120]:Prasad Log:Exiting Function RPC_SKEL_FreeBuffer with return value 0x0
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: MemMgr:  return status = 0
 [APPM3]: MemMgr:  return status = 0
-[APPM3]: [MNU=148] rm_plugin_res/src/rm_pluginres_iss.c:[204]:User releasing ISS Mhz:200
-[APPM3]: [MNU=149] rm_plugin_res/src/rm_pluginres_iss.c:[207]:Release:: Setting ISS Mhz:0
+[APPM3]: [MNU=206] rm_plugin_res/src/rm_pluginres_iss.c:[204]:User releasing ISS Mhz:200
+[APPM3]: [MNU=207] rm_plugin_res/src/rm_pluginres_iss.c:[207]:Release:: Setting ISS Mhz:0
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=150] rm_plugin_res/src/rm_pluginres_iss.c:[224]:Release:: Freeing ISS Mhz:0 before resource disable
+[APPM3]: [MNU=208] rm_plugin_res/src/rm_pluginres_iss.c:[224]:Release:: Freeing ISS Mhz:0 before resource disable
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [ERR=151] rm_plugin_res/src/rm_pluginpower_resource.c:[1708]:[FDIF]: Release Constraints FAILED nSLPMStatus(0x12)
+[APPM3]: [ERR=209] rm_plugin_res/src/rm_pluginpower_resource.c:[1708]:[FDIF]: Release Constraints FAILED nSLPMStatus(0x12)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [ERR=152] rm_plugin_res/src/rm_pluginpower_resource.c:[1724]:[FDIF]: Release Constraints FAILED nSLPMStatus(0x12)
-[APPM3]: [MNU=153] rm_plugin_res/src/rm_pluginpower_resource.c:[981]:Releasing ISS
+[APPM3]: [ERR=210] rm_plugin_res/src/rm_pluginpower_resource.c:[1724]:[FDIF]: Release Constraints FAILED nSLPMStatus(0x12)
+[APPM3]: [MNU=211] rm_plugin_res/src/rm_pluginpower_resource.c:[981]:Releasing ISS
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=154] rm_plugin_res/src/rm_pluginres_ipu.c:[217]:User releasing IPU[1] Mhz:200
-[APPM3]: [MNU=155] rm_plugin_res/src/rm_pluginres_ipu.c:[220]:Release:: Setting IPU[1] Mhz:0
+[APPM3]: [MNU=212] rm_plugin_res/src/rm_pluginres_ipu.c:[217]:User releasing IPU[1] Mhz:200
+[APPM3]: [MNU=213] rm_plugin_res/src/rm_pluginres_ipu.c:[220]:Release:: Setting IPU[1] Mhz:0
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=156] rm_plugin_res/src/rm_pluginres_ipu.c:[237]:Release:: Freeing IPU[1] Mhz:0 before resource disable
+[APPM3]: [MNU=214] rm_plugin_res/src/rm_pluginres_ipu.c:[237]:Release:: Freeing IPU[1] Mhz:0 before resource disable
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=157] rm_plugin_res/src/rm_pluginres_l3bus.c:[179]:User releasing L3BUS BW:1000 MB/s
-[APPM3]: [MNU=158] rm_plugin_res/src/rm_pluginres_l3bus.c:[182]:Release:: Setting L3BUS BW:0 MB/s
+[APPM3]: [MNU=215] rm_plugin_res/src/rm_pluginres_l3bus.c:[179]:User releasing L3BUS BW:1000 MB/s
+[APPM3]: [MNU=216] rm_plugin_res/src/rm_pluginres_l3bus.c:[182]:Release:: Setting L3BUS BW:0 MB/s
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
-[APPM3]: [MNU=159] rm_plugin_res/src/rm_pluginres_l3bus.c:[192]:Release:: Freeing L3BUS BW:0 MB/s before resource disable
+[APPM3]: [MNU=217] rm_plugin_res/src/rm_pluginres_l3bus.c:[192]:Release:: Freeing L3BUS BW:0 MB/s before resource disable
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: [SLPM]: slpm_ack_callback FAILS cbError(0x0)
 [APPM3]: MemMgr:  return status = 0
 [APPM3]: MemMgr:  return status = 0
 [APPM3]: MemMgr:  return status = 0
-[APPM3]: [ERR=160] omx_rpc/src/omx_rpc_skel.c:[588]:Prasad Log: Entering function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=161] omx_rpc/src/omx_rpc_skel.c:[622]:Prasad Log: Exiting function -- RPC_SKEL_SendCommand
-[APPM3]: [ERR=162] omx_rpc/src/omx_rpc_skel.c:[414]:Prasad Log: Entering function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=163] omx_rpc/src/omx_rpc_skel.c:[441]:Prasad Log: Exiting function -- RPC_SKEL_GetParameter
-[APPM3]: [ERR=164] omx_rpc/src/omx_rpc_skel.c:[357]:Prasad Log: Entering function -- RPC_SKEL_SetParameter
-[APPM3]: [ERR=165] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
+[APPM3]: [ERR=218] omx_rpc/src/omx_rpc_skel.c:[600]:Prasad Log:Entering Function RPC_SKEL_SendCommand
+[APPM3]: [ERR=219] omx_rpc/src/omx_rpc_skel.c:[626]:Prasad Log:Function RPC_SKEL_SendCommand, Parameters hComp=0x4289c0, eCmd=0x2, nParam=-1, pCmdData=0xa0068ccc
+[APPM3]: [ERR=220] omx_rpc/src/omx_rpc_skel.c:[637]:Prasad Log:Exiting Function RPC_SKEL_SendCommand with return value 0x0
+[APPM3]: [ERR=221] omx_rpc/src/omx_rpc_skel.c:[420]:Prasad Log:Entering Function RPC_SKEL_GetParameter
+[APPM3]: [ERR=222] omx_rpc/src/omx_rpc_skel.c:[438]:Prasad Log:Function RPC_SKEL_GetParameter, Parameters nParamIndex=0x7f000025 pCompParam=0xa00693c8
+[APPM3]: [ERR=223] omx_rpc/src/omx_rpc_skel.c:[449]:Prasad Log:Exiting Function RPC_SKEL_GetParameter with return value 0x0
+[APPM3]: [ERR=224] omx_rpc/src/omx_rpc_skel.c:[361]:Prasad Log:Entering Function RPC_SKEL_SetParameter
+[APPM3]: [ERR=225] omx_rpc/src/omx_rpc_skel.c:[379]:Prasad Log:Function RPC_SKEL_SetParameter, Parameters nParamIndex=0x7f000025 pCompParam=0xa00694c8
+[APPM3]: [ERR=226] src/msp_3A.c:[819]:ERROR: in src/msp_3A.c [MSP_3A_query] :: 819
 [APPM3]:
-[APPM3]: [ERR=166] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 2592 & height is 1944
+[APPM3]: [ERR=227] ST987/src/ST987.c:[811]:ST987_getOutCfg width is 2592 & height is 1944
 [APPM3]:
 [APPM3]:
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 39, value is 0
 [APPM3]: In simple_GPIO_write, Writing to GPIO id 83, value is 0
-[APPM3]: [ERR=167] ST987/src/ST987_tsk.c:[271]:In ST987_Task, Powering Off ST ISP
-[APPM3]: [ERR=168] src/i2c_wrapper.c:[256]:In deinitialize_i2c
-[APPM3]: [ERR=169] omx_rpc/src/omx_rpc_skel.c:[384]:Prasad Log: Exiting function -- RPC_SKEL_SetParameter
+[APPM3]: [ERR=228] ST987/src/ST987_tsk.c:[271]:In ST987_Task, Powering Off ST ISP
+[APPM3]: [ERR=229] src/i2c_wrapper.c:[256]:In deinitialize_i2c
+[APPM3]: [ERR=230] omx_rpc/src/omx_rpc_skel.c:[390]:Prasad Log:Exiting Function RPC_SKEL_SetParameter with return value 0x0
 [APPM3]:
 [SYSM3]:  InterruptDucati.c|325| eventId(3)
 [SYSM3]:
-
-Connection to host lost.
-
-C:\Users\a0393906>#telnet 172.24.191.242
-'#telnet' is not recognized as an internal or external command,
-operable program or batch file.
-
-C:\Users\a0393906>

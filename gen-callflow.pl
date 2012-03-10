@@ -1,38 +1,9 @@
-sub printline($$)
-{
-	my $i = $depth;
-	my $line = shift;
-	my $dir = shift;
 
-	#print $line;
-	my ($field, $value) = $line =~ m/(.*\-\-)(.*)$/; 
-	#print $field;
-	#print MYFILE "\n\n";
-	while($i >= 0)
-	{
-		#print MYFILE "\n\t\t\t\|\t\t\t\t\|";
-		print MYFILE "\n\t\t\t\|";
-		$i--;
-	}
-	print MYFILE $value;
-	if($dir eq "enter")
-	{
-		print MYFILE "\n\t\t\t\|------------------------------>\|";
-	}
-	else
-	{
-		print MYFILE "\n\t\t\t\|<------------------------------\|";
-		print MYFILE "\n\t\t\t\|\t\t\t\t\|";
-		print MYFILE "\n\t\t\t\|\t\t\t\t\|";
-		print MYFILE "\n\t\t\t\|\t\t\t\t\|";
 
-	}
-}
 
-#main
 $depth = 0;
-
-open(MYFILE, "callflow.txt");
+sub printlline($$);
+open(MYFILE, "startup_log-playbook.txt");
 @lines = <MYFILE>;
 close(MYFILE);
 
@@ -55,4 +26,41 @@ foreach $line (@lines)
 		$depth--;
 	}
 }
+
 system("type output.txt");
+
+
+
+sub printline($$)
+{
+	my $i = $depth;
+	my $line = shift @_;
+	my $dir = shift @_;
+
+	
+	while($i >= 0)
+	{
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+		print MYFILE  "\n\t\t\t\|";
+		$i--;
+	}
+
+	if($dir eq "enter")
+	{
+		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
+		print MYFILE $value;
+		print MYFILE "\n\t\t\t\|------------------------------>\|";
+	}
+	else
+	{
+		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
+		my ($field, $ignore,$value)= $value =~ m/(.*)(.*with return value)(.*)$/;
+		print MYFILE $field,"  ",$value."\n";
+		print MYFILE  "\n\t\t\t\|<------------------------------\|";
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+
+	}
+}
+
