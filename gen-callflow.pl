@@ -3,12 +3,12 @@
 
 $depth = 0;
 sub printlline($$);
-open(MYFILE, "startup_log-playbook.txt");
+open(MYFILE, "callflow.txt");
 @lines = <MYFILE>;
 close(MYFILE);
 
 open(MYFILE, ">output.txt");
-print MYFILE "\t\t\t    A9 \t\t\t      Ducati";
+print MYFILE "\t\t\t A9 \t\t\t         Ducati";
 foreach $line (@lines)
 {
 	if($line =~ m/i2c/)
@@ -25,6 +25,10 @@ foreach $line (@lines)
 		printline($line, "exit");
 		$depth--;
 	}
+	if($line=~m/PARAMETERS/)
+	{
+		printline($line,"parameters");
+	}
 }
 
 system("type output.txt");
@@ -40,26 +44,47 @@ sub printline($$)
 	
 	while($i >= 0)
 	{
-		print  "\n\t\t\t\|\t\t\t\t\|";
-		print  "\n\t\t\t\|";
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+		print MYFILE  "\n\t\t\t\|";
 		$i--;
 	}
 
 	if($dir eq "enter")
 	{
 		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
-		print $value;
-		print "\n\t\t\t\|------------------------------>\|";
+		print MYFILE "Entered",$value;
+		print MYFILE "\n\t\t\t\|------------------------------>\|";
+	}
+	elsif($dir eq "parameters" )
+	{
+		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
+		my @val=split /,|\s/,$value;
+		my $length=@val;
+		
+		print MYFILE  "\n\t\t\t\|<------------------------------\|";
+		print MYFILE "\r","\t\tParameters==>";
+			for ( $i=2;$i<$length-1;$i++)
+
+		{
+ 			print MYFILE $val[$i];
+		}
+		print  MYFILE "\n\t\t\t\|\t\t\t\t\|";
+		print  MYFILE "\n\t\t\t\|\t\t\t\t\|";
+		print  MYFILE "\n\t\t\t\|\t\t\t\t\|";
+	
+		
+					
 	}
 	else
 	{
 		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
-		my ($field, $ignore,$value)= $value =~ m/(.*)(.*with return value)(.*)$/;
-		print $field,"  ",$value."\n";
-		print  "\n\t\t\t\|<------------------------------\|";
-		print  "\n\t\t\t\|\t\t\t\t\|";
-		print  "\n\t\t\t\|\t\t\t\t\|";
-		print  "\n\t\t\t\|\t\t\t\t\|";
+		#my ($field, $ignore,$value)= $value =~ m/(.*)(.*with return value)(.*)$/;
+		my @val=split /\s/,$value;
+		print MYFILE "Leaving",$val[1]," ",$val[5];
+		print MYFILE  "\n\t\t\t\|<------------------------------\|";
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
 
 	}
 }
