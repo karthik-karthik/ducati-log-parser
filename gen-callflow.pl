@@ -40,26 +40,26 @@ sub printline($$)
 	
 	while($i >= 0)
 	{
-		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
-		print MYFILE  "\n\t\t\t\|";
+		print  "\n\t\t\t\|\t\t\t\t\|";
+		print  "\n\t\t\t\|";
 		$i--;
 	}
 
 	if($dir eq "enter")
 	{
 		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
-		print MYFILE $value;
-		print MYFILE "\n\t\t\t\|------------------------------>\|";
+		print $value;
+		print "\n\t\t\t\|------------------------------>\|";
 	}
 	else
 	{
 		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
 		my ($field, $ignore,$value)= $value =~ m/(.*)(.*with return value)(.*)$/;
-		print MYFILE $field,"  ",$value."\n";
-		print MYFILE  "\n\t\t\t\|<------------------------------\|";
-		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
-		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
-		print MYFILE  "\n\t\t\t\|\t\t\t\t\|";
+		print $field,"  ",$value."\n";
+		print  "\n\t\t\t\|<------------------------------\|";
+		print  "\n\t\t\t\|\t\t\t\t\|";
+		print  "\n\t\t\t\|\t\t\t\t\|";
+		print  "\n\t\t\t\|\t\t\t\t\|";
 
 	}
 }
