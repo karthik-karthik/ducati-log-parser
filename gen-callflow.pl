@@ -58,15 +58,21 @@ sub printline($$)
 	elsif($dir eq "parameters" )
 	{
 		my ($field, $value) = $line =~ m/(.*unction)(.*)$/;
-		my @val=split /,|\s/,$value;
+		#my @val=split /,|\s/,$value;
+		my @val=split /,/,$value;
+		#print "\n $value";
+		#foreach $temp (@val)
+		#{
+		#		print "--- $temp";
+		#}
 		my $length=@val;
 		
-		print MYFILE  "\n\t\t\t\|<------------------------------\|";
-		print MYFILE "\r","\t\tParameters==>";
-			for ( $i=2;$i<$length-1;$i++)
+		#print MYFILE  "\n\t\t\t\|<------------------------------\|";
+		#print MYFILE "\r","\t\tParameters==>";
+			for ( $i=1;$i<$length-1;$i++)
 
 		{
- 			print MYFILE $val[$i];
+ 			print MYFILE "\r\t\t\t $val[$i] \n";
 		}
 		print  MYFILE "\n\t\t\t\|\t\t\t\t\|";
 		print  MYFILE "\n\t\t\t\|\t\t\t\t\|";
